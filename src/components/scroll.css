@@ -1,0 +1,59 @@
+.banner {
+  background-color: black;
+  width: 100vw;
+  height: 140px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos-container {
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+.logos-container h2 {
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100%));
+  }
+}
+
+/* 
+
+  CODIGO SCROLL
+   <div className="banner">
+            <div className="logos-container">
+              <h2 className="text-3xl font-bold leading-7 text-white">Apple</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Samsung</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Huawei</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Motorola</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Xiaomi</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Realme</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Oppo</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Lg</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">-</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Baterias</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Visores</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Pantallas</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Tapas</h2>
+              <h2 className="text-3xl font-bold leading-7 text-white">Flex</h2>
+            </div>
+          </div>
+
+
+
+*/
